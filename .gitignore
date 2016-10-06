@@ -1,0 +1,3 @@
+*.tbz
+__pycache__/
+.env/

@@ -1,0 +1,14 @@
+*.pyc
+*.swo
+*.swp
+*.ini
+*.tbz
+*.pdf
+fabfile.*
+docs*
+log/*
+run*
+*.csv
+exclude.txt
+.git*
+.env/

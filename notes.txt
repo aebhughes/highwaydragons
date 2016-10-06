@@ -1,0 +1,8 @@
+html---|
+       |---images
+       |---css
+       |---js
+
+-   Upload whatever, where ever.  If they break it, thier problem
+-   Deletes?
+-   Downloads?

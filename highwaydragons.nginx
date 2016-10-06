@@ -1,0 +1,39 @@
+upstream highwaydragons_app {
+
+    server unix:/srv/highwaydragons/run/gunicorn.sock fail_timeout=0;
+    }
+
+    server {
+
+        listen  80;
+        server_name highwaydragons.co.za www.highwaydragons.co.za
+                    highwaydragonsmc.co.za www.highwaydragonsmc.co.za;
+
+        client_max_body_size 4G;
+
+        access_log /srv/highwaydragons/log/nginx-access.log;
+        error_log /srv/highwaydragons/log/nginx-error.log;
+
+        location /static/ {
+            alias /srv/highwaydragons/static/;
+        }
+
+        location /static/media/ {
+            alias /var/highwaydragons/;
+        }
+
+        location /profiles/ {
+            alias /var/profiles/;
+        }
+
+        location / {
+            proxy_set_header X-Forwarded_For $proxy_add_x_forwarded_for;
+            proxy_set_header Host $http_host;
+            proxy_redirect off;
+            if (!-f $request_filename) {
+                proxy_pass http://highwaydragons_app;
+                break;
+            }
+    }
+}
+

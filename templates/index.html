@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 50%;
+      height: 50%;
+      margin: auto;
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Highway Dragons</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Dragon Rally</a></li>
+      <li><a href="#">Members</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+    <div class="row">
+       <div class="col-md-4">
+          <img src="static/logo.png" height="200">
+
+       </div>
+       <div class="col-md-8">
+           <h2>Welcome to the Home of the Highway Dragons</h2>
+           <p>
+Welcome to the website of the Highway Dragons Motorcycle Club. Feel free to cruise the site and to see what we are about. Should you wish to contact us please do so and we will get back to you.
+           </p>
+
+           <p>
+The Highway Dragons was established in 1997 and has been active in the Durban Area since. Chapters have been established in Gauteng and internationally in the United Arab Emirates.
+           </p>
+
+           <p>
+The aim of the club is to get like minded people together and to have fun.
+           </p>
+       </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-8">
+            <h3>18th Dragon Rally!</h3>
+            <h4>July 28, 2016</h4>
+            The Dragon Rally & Jack Frost is upon us.  Here is what you need to do:
+            <ul>
+                <li>Complete the online entry <a href="#">here</a></li>
+                <li>Deposit the required entry fee into the Highway Dragons account, 
+                    <a href="#">Details Here</a>
+                </li>
+                <li>
+                    <a href="mailto:megafone@highwaydragonsmc.co.za">Email</a> proof of payment
+                </li>
+            </ul>
+            Remember to bring cash.  There are no ATM facilities.
+        </div>
+        <div class="col-md-4">
+            <img src="static/hw_dragon3.png" height="150">
+        </div>
+    </div>
+    <hr>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="static/dragon 130001.jpg" alt="rally 1" height="200">
+        </div>
+
+        <div class="item">
+          <img src="static/dragon 130002.jpg" alt="rally 2" height="200">
+        </div>
+
+        <div class="item">
+          <img src="static/dragon 130003.jpg" alt="rally 3" height="200">
+        </div>
+
+        <div class="item">
+          <img src="static/dragon 130004.jpg" alt="rally 4" height="200">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <p class="lead text-center">Caption here</p>
+</div>
+
+</body>
+</html>
