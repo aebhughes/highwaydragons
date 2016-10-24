@@ -13,6 +13,9 @@ echo "Starting $NAME"
 # Activate the virtual environment
 cd $VIRTENV 
 source bin/activate
+export COUCHUSER=alex
+export COUCHPW=fr3dalex
+export UPLOADS=/srv/uploads/hwdragons
 
 export PYTHONPATH=$FLASKDIR:$PYTHONPATH
 

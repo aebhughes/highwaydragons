@@ -18,12 +18,8 @@ upstream highwaydragons_app {
             alias /srv/highwaydragons/static/;
         }
 
-        location /static/media/ {
-            alias /var/highwaydragons/;
-        }
-
-        location /profiles/ {
-            alias /var/profiles/;
+        location /media/ {
+            alias /srv/media/highwaydragons/;
         }
 
         location / {

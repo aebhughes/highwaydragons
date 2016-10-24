@@ -9,10 +9,10 @@ db = couch['highwaydragons']
 
 class Club(object):
     def __init__(self, **kwargs):
-        pass
-    
-    def print_club(self, **kwargs):
-        print('Club name here...')
+        self.doc = None
+        if 'key' in kwargs:
+            self.doc = db.get(kwargs['key']) 
+        
 
 class Member(Club):
     def __init__(self, **kwargs):
