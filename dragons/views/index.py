@@ -5,8 +5,6 @@ mod = Blueprint('index',__name__)
 
 @mod.route('/')
 def index():
-    m = models.Member()
-    m.print_club()
     return render_template('index.html')
 
 @mod.route('/members')
