@@ -1,6 +1,6 @@
 upstream highwaydragons_app {
 
-    server unix:/srv/highwaydragons/run/gunicorn.sock fail_timeout=0;
+    server unix:/var/www/HighwayDragons/run/gunicorn.sock fail_timeout=0;
     }
 
     server {
@@ -11,15 +11,15 @@ upstream highwaydragons_app {
 
         client_max_body_size 4G;
 
-        access_log /srv/highwaydragons/log/nginx-access.log;
-        error_log /srv/highwaydragons/log/nginx-error.log;
+        access_log /var/www/HighwayDragons/log/nginx-access.log;
+        error_log /var/www/HighwayDragons/log/nginx-error.log;
 
         location /static/ {
-            alias /srv/highwaydragons/static/;
+            alias /var/www/HighwayDragons/static/;
         }
 
         location /media/ {
-            alias /srv/media/highwaydragons/;
+            alias /srv/highwaydragons/;
         }
 
         location / {

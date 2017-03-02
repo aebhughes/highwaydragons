@@ -2,7 +2,6 @@
  
 NAME="highwaydragons"
 FLASKDIR=/srv/highwaydragons
-VIRTENV=/py3env
 SOCKFILE=/srv/highwaydragons/run/gunicorn.sock
 USER=root
 GROUP=root
@@ -11,11 +10,10 @@ NUM_WORKERS=1
 echo "Starting $NAME"
  
 # Activate the virtual environment
-cd $VIRTENV 
-source bin/activate
+source /var/www/.env/bin/activate
 export COUCHUSER=alex
 export COUCHPW=fr3dalex
-export UPLOADS=/srv/uploads/hwdragons
+export UPLOADS=/srv/uploads
 
 export PYTHONPATH=$FLASKDIR:$PYTHONPATH
 
