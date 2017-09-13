@@ -1,8 +1,8 @@
 #!/bin/bash
  
 NAME="highwaydragons"
-FLASKDIR=/srv/highwaydragons
-SOCKFILE=/srv/highwaydragons/run/gunicorn.sock
+FLASKDIR=/var/www/HighwayDragons
+SOCKFILE=/var/www/HighwayDragons/run/gunicorn.sock
 USER=root
 GROUP=root
 NUM_WORKERS=1
@@ -27,5 +27,5 @@ exec gunicorn $NAME:app -b 127.0.0.1:7100 \
   --name $NAME \
   --workers $NUM_WORKERS \
   --user=$USER --group=$GROUP \
-  --log-level=debug \
+  --log-level=info \
   --bind=unix:$SOCKFILE

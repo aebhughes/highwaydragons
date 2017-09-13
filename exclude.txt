@@ -12,3 +12,4 @@ run*
 exclude.txt
 .git*
 .env/
+__pycache__/
