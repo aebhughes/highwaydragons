@@ -11,8 +11,8 @@ echo "Starting $NAME"
  
 # Activate the virtual environment
 source /var/www/.env/bin/activate
-export COUCHUSER=alex
-export COUCHPW=fr3dalex
+export COUCHUSER=aebhughes
+export COUCHPW='Custom Soft Her0!'
 export UPLOADS=/srv/uploads
 
 export PYTHONPATH=$FLASKDIR:$PYTHONPATH
